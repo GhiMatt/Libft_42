@@ -7,4 +7,3 @@ int ft_isalnum(char k)
     else
     return(0);
 }
-
