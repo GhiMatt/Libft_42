@@ -6,4 +6,4 @@ int ft_isalnum(char k)
     return (1);
     else
     return(0);
-}
+} 
