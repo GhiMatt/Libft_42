@@ -28,5 +28,4 @@ size_t  ft_strlcpy(char *to, const char *from, size_t size)
     }
     to[l] = '\0';
     return(c);
-
 }
