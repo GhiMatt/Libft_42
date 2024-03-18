@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghibell <mghibell@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 22:57:55 by mghibell          #+#    #+#             */
-/*   Updated: 2024/03/07 22:57:55 by mghibell         ###   ########.fr       */
+/*   Created: 2024/03/18 20:51:01 by mghibell          #+#    #+#             */
+/*   Updated: 2024/03/18 20:51:01 by mghibell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
 
-void    *ft_calloc(size_t c, size_t s)
+#include "libft.h"
+
+char	*ft_strdup(const char *c)
 {
-    void *output;
+	char	*dup_c;
+	size_t	i;
 
-    if (c && s && c > (UINT_MAX/s))
-    return (NULL);
-    
-    output = malloc(c * s);
-
-    if (output == NULL)
-        return(output);
-    ft_bzero(output, c * s);
-    return (output);
+	i = 0;
+	dup_c = (char *)malloc((ft_strlen(c) + 1) * sizeof(char));
+	if (!dup_c)
+		return (NULL);
+	while (c[i])
+	{
+		dup_c[i] = c[i];
+		i++;
+	}
+	dup_c[ft_strlen(c)] = '\0';
+	return (dup_c);
 }
