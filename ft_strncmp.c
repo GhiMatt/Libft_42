@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghibell <mghibell@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 21:41:34 by mghibell          #+#    #+#             */
-/*   Updated: 2024/03/07 21:41:34 by mghibell         ###   ########.fr       */
+/*   Created: 2024/03/20 23:43:23 by mghibell          #+#    #+#             */
+/*   Updated: 2024/03/20 23:43:23 by mghibell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
 
-int ft_strcmp(const char *s1, const char *s2, size_t n)
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
     size_t c;
 
