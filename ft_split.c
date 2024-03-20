@@ -52,11 +52,11 @@ char	**ft_split(char const *s, char c)
 			k = 0;
 			while (*s && *s != c && ++k)
 				++s;
-			matr[i++] = ft_substr(s - k, 0, k);
+			matr[j++] = ft_substr(s - k, 0, k);
 		}
 		else
 			s++;
 	}
-	matr[i] = 0;
+	matr[j] = 0;
 	return (matr);
 }
