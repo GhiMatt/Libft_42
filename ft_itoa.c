@@ -20,7 +20,7 @@ static size_t	digit_cnt(long nm)
 	if (nm < 0)
 	{
 		cnt++;
-		n = -n;
+		nm = -nm;
 	}
 	while (nm > 9)
 	{
