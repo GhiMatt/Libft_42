@@ -28,7 +28,7 @@ int ft_atoi(const char *t)
         t++;
     }
     else if(*t == '+')
-        s++;
+        t++;
     while (*t >= '0' && *t <= '9')
     {
         i = i * 10;
