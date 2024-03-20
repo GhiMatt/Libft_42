@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int ft_isalnum(char k)
+int ft_isalnum(int k)
 {
     if((k >= 48 && k <= 57) || (k >= 65 && k <= 90) || (k >= 97 && k <= 122) )
     return (1);
