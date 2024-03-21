@@ -25,7 +25,7 @@ static size_t	digit_cnt(long nm)
 	while (nm > 9)
 	{
 		nm = nm / 10;
-		cnt++;
+		cnt++;	
 	}
 	return (cnt);
 }
