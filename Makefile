@@ -43,7 +43,5 @@ fclean : clean
 
 re: fclean all
 
-bonus: $(NAME) $(OBJS)
-	ar rc $(NAME) $(OBJS)
 
 .PHONY: all, clean, fclean, re
